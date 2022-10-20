@@ -1,5 +1,5 @@
-sudoku: main.o sudokucom.o
-	cc -osudoku -lcurl $^
+sudoku: main.o sudoku.o
+	cc -osudoku $^
 
 .PHONY: clean
 
