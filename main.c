@@ -121,12 +121,12 @@ int main() {
     struct sudoku *sudoku;
     char puzzle[100];
 
-    if (!get_puzzle(puzzle, "easy")) {
+    if (!get_puzzle(puzzle, "evil")) {
         fprintf(stderr, "can't get puzzle\n");
         exit(1);
     }
 
-    sudoku = sudoku_new(easy);
+    sudoku = sudoku_new(puzzle);
     if (sudoku == NULL) {
         perror("can't create new sudoku\n");
     }
